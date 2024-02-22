@@ -15,9 +15,8 @@
       <h1 class="tittle">Quanto vai cair?</h1>
 
       <div class="card">
-
         <div>
-          <div class="salario">
+          <div class="salario js-scroll">
             <div class="salario-descricao">
               <img class="dollar" src="./img/dollar-symbol.png" alt="">
               <input id="valorSalario" type="number" value="0.00">
@@ -25,15 +24,15 @@
             <p>Salario bruto</p>
           </div>
 
-          <div class="descontos">
-            <div class="descontos-descricao">
+          <div class="descontos js-scroll">
+            <div class="descontos-descricao j">
               <img class="dollar" src="./img/dollar-symbol.png" alt="">
               <input id="valorDescontos" type="number" placeholder="descontos" value='0.00'>
             </div>
             <p>Descontos Adicionais</p>
           </div>
 
-          <div class="vale-transporte">
+          <div class="vale-transporte js-scroll">
             <div class="vale-transporte-btn">
               <button id="vts">Sim</button>
               <button id="vtn">Não</button>
@@ -60,31 +59,32 @@
         <h2>Descontos em folha</h2>
 
         <ul class="descontos-lista">
-          <div>
+
+          <div class="js-scroll">
             <li>Salario Liquido</li>
             <p id="salarioLiquido" class="salario-liquido">0,00</p>
           </div>
           <hr>
 
-          <div>
+          <div class="js-scroll">
             <li>INSS</li>
             <p id="INSS" class="INSS">0,00</p>
           </div>
           <hr>
 
-          <div>
+          <div class="js-scroll">
             <li>Imposto de Renda</li>
             <p id="impostoDeRenda" class="imposto-de-renda">0,00</p>
           </div>
           <hr>
 
-          <div>
+          <div class="js-scroll">
             <li>Vale transporte</li>
             <p id="valeTransporte" class="valeTransporte">0,00</p>
           </div>
           <hr>
 
-          <div>
+          <div class="js-scroll">
             <li>Descontos Adicionais</li>
             <p id="descontosAdicionais" class="descontos-adicionais">0,00</p>
           </div>

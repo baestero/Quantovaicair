@@ -13,14 +13,14 @@ let descontosAdicionais = document.querySelector(".descontos-adicionais");
 
 vtS.addEventListener("click", () => {
   vtS.classList.add("ativo");
-  vtN.classList.remove("ativo");
+  vtN.classList.remove("ativo2");
   btnVts = true;
   console.log(btnVts);
 });
 
 vtN.addEventListener("click", () => {
   vtS.classList.remove("ativo");
-  vtN.classList.add("ativo");
+  vtN.classList.add("ativo2");
   btnVts = false;
   console.log(btnVts);
 });
@@ -98,4 +98,10 @@ function calculaLiquido() {
 
 btn.addEventListener("click", () => {
   calculaLiquido();
+});
+
+const animacao = document.querySelectorAll(".js-scroll");
+
+animacao.forEach((item) => {
+  item.classList.add("ativo1");
 });

@@ -103,11 +103,18 @@ button {
   color: #000;
   font-size: 0.85rem;
   border: none;
+  cursor: pointer;
+  margin-right: 5px;
 }
 
 .ativo {
   color: #f7f7f7;
-  background-color: #0aaf51;
+  background: #0aaf51;
+}
+
+.ativo2 {
+  color: #f7f7f7;
+  background: #cf0e0e;
 }
 
 .vale-transporte-btn {
@@ -179,6 +186,51 @@ button {
   color: #f7f7f7;
   border-radius: 0px 0px 4px 4px;
   cursor: pointer;
+}
+
+.ativo1 {
+  opacity: 0;
+  animation: show 0.3s forwards;
+  animation-delay: 0.4s; /* Ajuste o atraso conforme necessário para cada seção */
+}
+
+.ativo1:nth-child(2) {
+  animation-delay: 0.6s; /* Ajuste o atraso conforme necessário para cada seção */
+}
+
+.ativo1:nth-child(3) {
+  animation-delay: 0.8s; /* Ajuste o atraso conforme necessário para cada seção */
+}
+
+.ativo1:nth-child(4) {
+  animation-delay: 0.9s; /* Ajuste o atraso conforme necessário para cada seção */
+}
+.ativo1:nth-child(5) {
+  animation-delay: 1s; /* Ajuste o atraso conforme necessário para cada seção */
+}
+.ativo1:nth-child(6) {
+  animation-delay: 1.1s; /* Ajuste o atraso conforme necessário para cada seção */
+}
+.ativo1:nth-child(7) {
+  animation-delay: 1.2s; /* Ajuste o atraso conforme necessário para cada seção */
+}
+.ativo1:nth-child(8) {
+  animation-delay: 1.3s; /* Ajuste o atraso conforme necessário para cada seção */
+}
+.ativo1:nth-child(9) {
+  animation-delay: 1.4s; /* Ajuste o atraso conforme necessário para cada seção */
+}
+
+@keyframes show {
+  from {
+    opacity: 0;
+    transform: translate3d(-30px, 0, 0);
+  }
+
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
 }
 
 @media (min-width: 800px) {
