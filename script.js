@@ -69,27 +69,39 @@ function calculaLiquido() {
     }
     calculaIR();
 
+    function animaNumeros(descontoFolha, tipoDesconto) {
+      const incremento = tipoDesconto / 100;
+      let start = 0;
+      const timer = setInterval(() => {
+        start += incremento;
+        descontoFolha.innerHTML = start.toFixed(2);
+        if (start >= tipoDesconto) {
+          descontoFolha.innerHTML = tipoDesconto.toFixed(2);
+          clearInterval(timer);
+        }
+      }, 20 * Math.random());
+    }
+
     if (btnVts === true) {
       vt = salario * 0.06;
-
       descontosAdd = parseFloat(valorDescontos.value);
       resultado = salarioDescontado - ir - vt - descontosAdd;
 
-      salarioLiquido.innerHTML = `${resultado.toFixed(2)}`;
-      INSS.innerHTML = `${inss.toFixed(2)}`;
-      impostoDeRenda.innerHTML = `${ir.toFixed(2)}`;
-      valeTransporte.innerHTML = `${vt.toFixed(2)}`;
-      descontosAdicionais.innerHTML = `${descontosAdd.toFixed(2)}`;
+      animaNumeros(salarioLiquido, resultado);
+      animaNumeros(INSS, inss);
+      animaNumeros(impostoDeRenda, ir);
+      animaNumeros(valeTransporte, vt);
+      animaNumeros(descontosAdicionais, descontosAdd);
     } else if (btnVts === false) {
       vt = 0.0;
       descontosAdd = parseFloat(valorDescontos.value);
       resultado = salarioDescontado - ir - descontosAdd;
 
-      salarioLiquido.innerHTML = `${resultado.toFixed(2)}`;
-      INSS.innerHTML = `${inss.toFixed(2)}`;
-      impostoDeRenda.innerHTML = `${ir.toFixed(2)}`;
-      valeTransporte.innerHTML = `${vt.toFixed(2)}`;
-      descontosAdicionais.innerHTML = `${descontosAdd.toFixed(2)}`;
+      animaNumeros(salarioLiquido, resultado);
+      animaNumeros(INSS, inss);
+      animaNumeros(impostoDeRenda, ir);
+      animaNumeros(valeTransporte, vt);
+      animaNumeros(descontosAdicionais, descontosAdd);
     } else {
       alert("Selecione se deseja descontar Vale transporte ou não!");
     }
