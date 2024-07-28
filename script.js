@@ -26,7 +26,8 @@ vtN.addEventListener("click", () => {
 });
 
 function calculaLiquido() {
-  let salario = parseFloat(valorSalario.value);
+  let salario = valorSalario.value;
+  salario = +salario.replace(".", "");
   let descontosAdd;
   let inss = 0.075;
   let ir = 0;
@@ -84,7 +85,8 @@ function calculaLiquido() {
 
     if (btnVts === true) {
       vt = salario * 0.06;
-      descontosAdd = parseFloat(valorDescontos.value);
+      descontosAdd = valorDescontos.value;
+      descontosAdd = +descontosAdd.replace(".", "");
       resultado = salarioDescontado - ir - vt - descontosAdd;
 
       animaNumeros(salarioLiquido, resultado);
@@ -94,7 +96,8 @@ function calculaLiquido() {
       animaNumeros(descontosAdicionais, descontosAdd);
     } else if (btnVts === false) {
       vt = 0.0;
-      descontosAdd = parseFloat(valorDescontos.value);
+      descontosAdd = valorDescontos.value;
+      descontosAdd = +descontosAdd.replace(".", "");
       resultado = salarioDescontado - ir - descontosAdd;
 
       animaNumeros(salarioLiquido, resultado);
