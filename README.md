@@ -14,7 +14,7 @@ Neste projeto você encontrará:
 ## 🔗 Acesse o Projeto
 
 **Visite o meu projeto:**
-[https://baestero.github.io/calculadora-salario-liquido/](https://baestero.github.io/calculadora-salario-liquido/)
+[baestero.github.io/Quantovaicair//](baestero.github.io/Quantovaicair/)
 
 ## 🖼 Preview
 
