@@ -14,7 +14,7 @@ Neste projeto você encontrará:
 ## 🔗 Acesse o Projeto
 
 **Visite o meu projeto:**
-[baestero.github.io/Quantovaicair//](baestero.github.io/Quantovaicair/)
+[baestero.github.io/Quantovaicair/](baestero.github.io/Quantovaicair/)
 
 ## 🖼 Preview
 
