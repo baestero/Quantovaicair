@@ -18,7 +18,7 @@ Neste projeto você encontrará:
 
 ## 🖼 Preview
 
-![Veja o Projeto aqui!](Captura de tela 2025-05-11 191619.png)
+![Veja o Projeto aqui!](github.com/baestero/Quantovaicair/blob/main/Captura%20de%20tela%202025-05-11%20191619.png)
 
 ## 🛠 Tecnologias Utilizadas
 
